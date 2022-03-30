@@ -1,0 +1,22 @@
+{
+
+  "manifest_version": 2,
+  "name": "RemoveGithubNews",
+  "version": "1.0",
+
+  "description": "Remove annoying social media features of Github landing page",
+
+  "icons": {
+    "48": "icons/logo-48.png"
+  },
+
+  "content_scripts": [
+    {
+            "matches": ["https://github.com/"],
+
+      "js": ["clean_it.js"]
+    }
+  ]
+
+}
+
